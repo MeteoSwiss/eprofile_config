@@ -1,0 +1,464 @@
+# config file for defining the format of the output L1 NetCDF #
+###############################################################
+
+dimensions:
+  unlimited:
+    - time  # refers to variable name in data dictionary
+  fixed:
+    - frequency
+    - ir_wavelength
+    - bnds
+    - receiver_nb
+
+variables:
+  time:  # variable name in Measurement.data Dataset
+    name: time  # variable name in output NetCDF
+    dim:
+      - time
+    type: f8
+    _FillValue: null
+    optional: False
+    attributes:
+      long_name: Time (UTC) of the measurement
+      standard_name: time
+      units: seconds since 1970-01-01 00:00:00
+      calendar: standard
+      bounds: time_bnds
+      comment: Time indication of samples is at the end of integration time
+
+  time_bnds:
+    name: time_bnds
+    dim:
+      - time
+      - bnds
+    type: f8
+    _FillValue: null
+    optional: False
+    attributes:
+      long_name: Time interval endpoints
+
+  lat:
+    name: station_latitude
+    dim:
+      - time
+    type: f4
+    _FillValue: -999.
+    optional: False
+    attributes:
+      long_name: Latitude of measurement station
+      standard_name: latitude
+      units: degree_north
+
+  lon:
+    name: station_longitude
+    dim:
+      - time
+    type: f4
+    _FillValue: -999.
+    optional: False
+    attributes:
+      long_name: Longitude of measurement station
+      standard_name: longitude
+      units: degree_east
+
+  altitude:
+    name: station_altitude
+    dim:
+      - time
+    type: f4
+    _FillValue: -999.
+    optional: False
+    attributes:
+      long_name: Altitude above mean sea level of measurement station
+      standard_name: altitude
+      units: m
+
+  frequency:
+    name: frequency
+    dim:
+      - frequency
+    type: f4
+    _FillValue: -999.
+    optional: False
+    attributes:
+      long_name: Nominal centre Frequency of microwave channels
+      standard_name: radiation_frequency
+      units: GHz
+      comment: 1) For double-sideband receivers, frequency corresponds to the local oscillator frequency whereas the radio frequency of the upper/lower sideband is frequency+/-sideband_IF_separation. 2) In case of known offset between the real and the nominal frequency of some channels, frequency+freq_shift gives more accurate values.
+
+  receiver_nb:
+    name: receiver_nb
+    dim:
+      - receiver_nb
+    type: i1
+    _FillValue: -128
+    optional: False
+    attributes:
+      long_name: Number of the microwave receiver
+      units: '1'
+      comment: Different numbers correspond to distinct receiver boards. The variable receiver indicates which frequency channels correspond to each receiver board.
+
+  receiver:
+    name: receiver
+    dim:
+      - frequency
+    type: i1
+    _FillValue: -128
+    optional: False
+    attributes:
+      long_name: Corresponding microwave receiver for each channel
+      units: '1'
+      comment: Different numbers correspond to distinct receiver boards defined in receiver_nb.
+
+  bandwidth:
+    name: bandwidth
+    dim:
+      - frequency
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Bandwidth (3 dB) of the microwave channels
+      units: GHz
+
+  beamwidth:
+    name: beamwidth
+    dim:
+      - frequency
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Beam width (FWHM) of the microwave radiometer
+      units: degree
+
+  # TODO: add n_sidebands
+  # TODO: add sideband_IF_separation
+  freq_shift:
+    name: freq_shift
+    dim:
+      - frequency
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Frequency shift to add to frequency for better accuracy
+      units: GHz
+      comment: For more accurate frequency values use frequency+freq_shift
+
+  azi:
+    name: azi
+    dim:
+      - time
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Microwave sensor azimuth angle
+      standard_name: sensor_azimuth_angle
+      units: degree
+      comment: 0=North, 90=East, 180=South, 270=West
+
+  ele:
+    name: ele
+    dim:
+      - time
+    type: f4
+    _FillValue: -999.
+    optional: False
+    attributes:
+      long_name: Microwave sensor elevation angle
+      # standard_name: sensor_elevation_angle is not registered as official standard name
+      units: degree
+      comment: 0=horizon, 90=zenith
+
+  Tb:
+    name: tb
+    dim:
+      - time
+      - frequency
+    type: f4
+    _FillValue: -999.
+    optional: False
+    attributes:
+      long_name: Microwave brightness temperatures
+      standard_name: brightness_temperature
+      units: K
+
+  quality_flag:
+    name: quality_flag
+    dim:
+      - time
+      - frequency
+    type: i2
+    _FillValue: -999
+    optional: False
+    append_thresholds: True  # if True or not set thresholds used in determination will be appended to comment
+    attributes:
+      long_name: Quality flag
+      standard_name: quality_flag
+      flag_masks: [1, 2, 4, 8, 16, 32, 64, 128]
+      flag_meanings: missing_tb tb_below_threshold tb_above_threshold spectral_consistency_above_threshold receiver_sanity_failed rain_detected sun_in_beam tb_offset_above_threshold
+      comment: 0 indicates data with good quality according to applied tests. The list of (not) applied tests is encoded in quality_flag_status.
+
+  quality_flag_status:
+    name: quality_flag_status
+    dim:
+      - time
+      - frequency
+    type: i2
+    _FillValue: -999
+    optional: False
+    attributes:
+      long_name: Checks not executed in determination of quality_flag
+      flag_masks: [1, 2, 4, 8, 16, 32, 64, 128]
+      flag_meanings: missing_tb_not_checked tb_lower_threshold_not_checked tb_upper_threshold_not_checked spectral_consistency_not_checked receiver_sanity_not_checked rain_not_checked sun_in_beam_not_checked tb_offset_not_checked
+
+  liquid_cloud_flag:
+    name: liquid_cloud_flag
+    dim:
+      - time
+    type: i1
+    _FillValue: -128
+    optional: True
+    attributes:
+      long_name: Presence of liquid clouds in beam
+      flag_values: [0, 1, 2]
+      flag_meanings: no_liquid_cloud liquid_cloud_present undefined
+      comment: The way this flag was determined is encoded in liquid_cloud_flag_status
+
+  liquid_cloud_flag_status:
+    name: liquid_cloud_flag_status
+    dim:
+      - time
+    type: i1
+    _FillValue: -128
+    optional: True
+    attributes:
+      long_name: Method for determination of liquid_cloud_flag
+      flag_values: [0, 1, 2]
+      flag_meanings: using_mwr_and_ir using_mwr_only other
+
+  scanflag:  # previously used BLscan_active (from RPG's HDF files), now use scanflag determined from filetype or ele
+    name: pointing_flag
+    dim:
+      - time
+    type: i1
+    _FillValue: -128
+    optional: True
+    attributes:
+      long_name: Flag indicating a single pointing (starring) or multiple pointing (scanning) observation sequence
+      flag_values: [0, 1, 2]
+      flag_meanings: single_pointing multiple_pointing unknown
+      comment: Series of multiple-pointing observations (elevation scans) provide more information on boundary layer temperature profiles compared to single pointing observations. If available, it is advised to prefer elevation scans over starring observations for temperature profile retrievals
+
+  statusflag:
+    name: instrument_status_code
+    dim:
+      - time
+    type: i4
+    _FillValue: -999
+    optional: True
+    attributes:
+      long_name: Native status code of the instrument
+      units: '1'
+      comment: Encodes housekeeping data and warnings. Refer to the respective user manual for interpretation.
+
+  T_amb:
+    name: t_amb
+    dim:
+      - time
+      - receiver_nb
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Ambient target temperature
+      units: K
+
+  T_rec:
+    name: t_rec
+    dim:
+      - time
+      - receiver_nb
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Receiver physical temperature
+      units: K
+
+  TN:
+    name: tn
+    dim:
+      - time
+      - receiver_nb
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Receiver noise temperature
+      units: K
+
+  # TODO: add tb_accuracy
+  # TODO: add tb_cov
+
+
+  ir_wavelength:
+    name: ir_wavelength
+    dim:
+      - ir_wavelength
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Wavelength of infrared channels
+      standard_name: sensor_band_central_radiation_wavelength
+      units: um
+
+  ir_bandwidth:
+    name: ir_bandwidth
+    dim:
+      - ir_wavelength
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Bandwidth (3 dB) of the infrared channels
+      units: um
+
+  ir_beamwidth:
+    name: ir_beamwidth
+    dim:
+      - ir_wavelength
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Beam width (3 dB) of the infrared radiometer
+      units: degree
+
+  azi_irt:
+    name: ir_azi
+    dim:
+      - time
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Infrared sensor azimuth angle
+      units: degree
+      comment: 0=North, 90=East, 180=South, 270=West
+
+  ele_irt:
+    name: ir_ele
+    dim:
+      - time
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Infrared sensor elevation angle
+      units: degree
+      comment: 0=horizon, 90=zenith
+
+  IRT:
+    name: irt
+    dim:
+      - time
+      - ir_wavelength
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Infrared brightness temperatures
+      units: K
+
+  T:
+    name: air_temperature
+    dim:
+      - time
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Air temperature
+      standard_name: air_temperature
+      units: K
+
+  p:
+    name: air_pressure
+    dim:
+      - time
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Air pressure
+      standard_name: air_pressure
+      units: hPa
+
+  RH:
+    name: relative_humidity
+    dim:
+      - time
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Relative humidity
+      standard_name: relative_humidity
+      units: '%'
+
+  rainrate:
+    name: rain_rate
+    dim:
+      - time
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Precipitation amount
+      standard_name: rainfall_rate
+      units: mm/h
+
+  winddir:
+    name: wind_direction
+    dim:
+      - time
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Wind direction
+      standard_name: wind_from_direction
+      units: degree
+      comment: 0=North, 90=East, 180=South, 270=West
+
+  windspeed:
+    name: wind_speed
+    dim:
+      - time
+    type: f4
+    _FillValue: -999.
+    optional: True
+    attributes:
+      long_name: Wind speed
+      standard_name: wind_speed
+      units: m/s
+
+  # met_quality_flag will not be set by E-PROFILE
+  # met_quality_flag_status will not be set by E-PROFILE
+
+# global attributes common to all instruments. Additional instrument-specific attrs in their config under nc_attributes.
+# If the same fields are present in the instrument-specific config, the general ones from below will be overwritten
+attributes:
+  Conventions: CF-1.8
+  references: E-PROFILE data format description document
+  license: Closed-Use Non-Commercial General Licence 1.0 (CUNCGL)
+  network_name: E-PROFILE
+  campaign_name: ''
+  comment: ''
+  source: Ground Based Remote Sensing
+  dependencies: None
+  # history is directly set in NetCDF writer
