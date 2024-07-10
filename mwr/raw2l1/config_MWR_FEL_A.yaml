@@ -1,0 +1,33 @@
+base_filename_in: MWR_FEL_A
+base_filename_out: MWR_1C01_0-20000-0-16999_A
+filename_scheme: attex
+input_directory: add full directory path here
+ir_wavelength: .nan
+meas_constructor: from_attex
+nc_attributes:
+  date_of_last_absolute_calibration: '2021-12-31 23:59:59'
+  date_of_last_covariance_matrix: '2021-12-31 23:59:59'
+  institution: ARPA VENETO
+  instrument_calibration_status: calibrated
+  instrument_generation: MTP-5
+  instrument_history: to_be_specified
+  instrument_hw_id: TBC
+  instrument_id: A
+  instrument_manufacturer: ATTEX
+  instrument_model: MTP-5HE
+  ir_instrument_fabrication_year: TBC
+  ir_instrument_manufacturer: TBC
+  ir_instrument_model: TBC
+  met_instrument_fabrication_year: TBC
+  met_instrument_manufacturer: TBC
+  met_instrument_model: TBC
+  principal_investigator: Remote Sensing Group
+  site_location: FELTRE,ITALY
+  type_of_automatic_calibrations: opaque atmosphere at low elevation and internal
+    load
+  wigos_station_id: 0-20000-0-16999
+output_directory: add full directory path here
+reader: reader_attex
+station_altitude: 291.0
+station_latitude: 46.02434
+station_longitude: 11.9064

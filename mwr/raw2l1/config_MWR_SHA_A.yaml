@@ -1,0 +1,69 @@
+ir_wavelength: 7.  # in nm. not mandatory to specify if available in data
+bandwidth:
+- 0.23
+- 0.23
+- 0.23
+- 0.23
+- 0.23
+- 0.23
+- 0.23
+beamwidth:
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+channels_ok:
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+freq_shift:
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+n_sidebands: 1
+ir_bandwidth: .nan
+ir_beamwidth: .nan
+ir_wavelength: .nan
+base_filename_in: MWR_SHA_A
+base_filename_out: MWR_1C01_0-20000-0-06620_A
+filename_scheme: rpg
+input_directory: add full directory path here
+meas_constructor: from_rpg
+nc_attributes:
+  date_of_last_absolute_calibration: '2021-12-31 23:59:59'
+  date_of_last_covariance_matrix: '2021-12-31 23:59:59'
+  institution: METEOSWISS
+  instrument_calibration_status: calibrated
+  instrument_generation: TEMPRO
+  instrument_history: to_be_specified
+  instrument_hw_id: R-TPRO-07/003
+  instrument_id: A
+  instrument_manufacturer: RPG
+  instrument_model: TEMPRO
+  ir_instrument_fabrication_year: TBC
+  ir_instrument_manufacturer: TBC
+  ir_instrument_model: TBC
+  met_instrument_fabrication_year: TBC
+  met_instrument_manufacturer: TBC
+  met_instrument_model: TBC
+  principal_investigator: Remote Sensing Group
+  site_location: SCHAFFHAUSEN,SWITZERLAND
+  type_of_automatic_calibrations: calibration with ambient temperature target and
+    noise diode
+  wigos_station_id: 0-20000-0-06620
+output_directory: add full directory path here
+reader: reader_rpg
+station_altitude: 438.0
+station_latitude: 47.689844
+station_longitude: 8.620125

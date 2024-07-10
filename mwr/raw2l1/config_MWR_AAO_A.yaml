@@ -1,0 +1,96 @@
+bandwidth:
+- 0.23
+- 0.23
+- 0.23
+- 0.23
+- 0.23
+- 0.23
+- 0.23
+- 0.23
+- 0.23
+- 0.23
+- 0.23
+- 0.6
+- 1.0
+- 2.0
+base_filename_in: MWR_AAO_A
+base_filename_out: MWR_1C01_0-20000-0-10505_A
+beamwidth:
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+channels_ok:
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+filename_scheme: rpg
+freq_shift:
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+input_directory: add full directory path here
+ir_bandwidth: .nan
+ir_beamwidth: .nan
+ir_wavelength: .nan
+meas_constructor: from_rpg
+n_sidebands: 1
+nc_attributes:
+  date_of_last_absolute_calibration: '2021-12-31 23:59:59'
+  date_of_last_covariance_matrix: '2021-12-31 23:59:59'
+  institution: DWD
+  instrument_calibration_status: calibrated
+  instrument_generation: HATPRO G1-5
+  instrument_history: to_be_specified
+  instrument_hw_id: '0030126'
+  instrument_id: A
+  instrument_manufacturer: RPG
+  instrument_model: HATPRO
+  ir_instrument_fabrication_year: TBC
+  ir_instrument_manufacturer: Heitronics
+  ir_instrument_model: KT19 II-Series
+  met_instrument_fabrication_year: '2017'
+  met_instrument_manufacturer: Vaisala
+  met_instrument_model: WXT 536
+  principal_investigator: Remote Sensing Group
+  site_location: AACHEN,GERMANY
+  type_of_automatic_calibrations: calibration with ambient temperature target and
+    noise diode
+  wigos_station_id: 0-20000-0-10505
+output_directory: add full directory path here
+reader: reader_rpg
+station_altitude: 231.0
+station_latitude: 50.8
+station_longitude: 6.03
