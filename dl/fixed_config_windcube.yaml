@@ -38,19 +38,19 @@ number_of_gate_points: 50
 # overlapping_gates: 0
 ############################################################################################################################
 # Number of laser shots used for avaraging (Note: please make sure this number is equal to the one specified in the scan modus)
-pulses_per_direction: 45000
+#pulses_per_direction: 45000
 # Number of different azimuth directions, that should be used in the wind retrieval
 number_of_direction: 24
 # Rate of consecutive laser shots
-puls_repetition_freq: 10000.
+#puls_repetition_freq: 15000.
 # Possible scan types: 'VAD', 'DBS', 'RHI' or 'User' for other (should match the hpl-File name; use either for windcube)
 # scan_type:  DBS_TP
 # Telescope focus, given in meter (Note: 65535 implies that the focus is at infinity, only for Halo-Systems) 
-focus: 65535
+focus: -999
 # Number of FFT points used in the radial wind measurements
 FFT_points:  1024
 # The best possible resolution of consecutive velocity estimates, given in m*s^-1
-#velocity_resoluton: 0.0382
+velocity_resolution: 0.0382
 # Version number of client, please check it
 version:  04
 # Temporal interval to use for wind retrieval, given in minutes
