@@ -3,11 +3,12 @@ WIGOS,identifier,profile_id,Site name,country,latitude,longitude,altitude
 0-20000-0-06620,SHAWL,A,Schaffhausen,Switzerland,47.69,8.62,438
 0-20000-0-06632,GREWL,A,Grenchen,Switzerland,47.18,7.41,428
 0-00000-0-00000,KEVWL,A,Keflavik,Iceland,-22.14,64.01,5
-0-00000-0-00001,INNWL,A,Innsbruck,Austria,47.26,11.39,613
+0-40-2-001IAO,INNWL,A,Innsbruck,Austria,47.26,11.39,613
+0-40-2-002KOL,KOLWL,A,Kolsass,Austria,47.31,11.62,545
 0-276-4-14990,AACWL,A,Aachen,Germany,50.80,6.02,231
 0-276-4-14991,FRIWL,A,Friesoythe,Germany,53.06,7.90,13.8
 0-276-4-14992,GTWWL,A,Gartow,Germany,53.07,11.44,86.3
 0-276-4-14993,KLHWL,A,Karlsruhe,Germany,49.09,8.43,112.5
 0-276-4-14989,LINWL,A,Lindenberg,Germany,52.21,14.13,104
 0-276-4-14994,OHPWL,A,Hohenpeissenberg,Germany,47.80,11.01,988
-0-00000-0-00001,NORWL,A,Nordholz,Germany,53.78,8.67,19
+0-00000-0-00002,NORWL,A,Nordholz,Germany,53.78,8.67,19
