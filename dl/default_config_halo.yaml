@@ -22,7 +22,7 @@ system :  halo
 # Laser wavelength of the system, given in meter
 system_wavelength : 1.5e-6
 # Pulse duration/length, i.e. FWHM duration, given in seconds
-puls_duration :  3.84e-7
+puls_duration :  3.24e-7 
 # Number of range gates in files (Note: can also be inferred from individual lvl-1 files)
 # number_of_gates : 284
 # Length if range gate, given in meter
@@ -40,13 +40,14 @@ puls_duration :  3.84e-7
 # Number of laser shots used for avaraging (Note: please make sure this number is equal to the one specified in the scan modus)
 #pulses_per_direction: 30000
 # Number of different azimuth directions, that should be used in the wind retrieval
-number_of_direction: 24
+number_of_direction: 12
 # Rate of consecutive laser shots
 #puls_repetition_freq: 10000.
 # Possible scan types: 'VAD', 'DBS', 'RHI' or 'User' for other (should match the hpl-File name; use either for windcube)
 # scan_type:  DBS_TP
-# Telescope focus, given in meter (Note: 65535 implies that the focus is at infinity, only for Halo-Systems) 
-# focus: 65535
+# Telescope focus, given in meter (Note: 65535 implies that the focus is at infinity, only for Halo-Systems)
+# According to Markus, even if this variable is written in the raw files of Halo systems, the default value should be used
+focus: 65535
 # Number of FFT points used in the radial wind measurements
 FFT_points:  1024
 # The best possible resolution of consecutive velocity estimates, given in m*s^-1
@@ -56,7 +57,7 @@ version:  04
 # Temporal interval to use for wind retrieval, given in minutes
 avg_min:  10
 # Threshold used for acceptable condition numbers in the mean wind retrieval
-cn_threshold:  10
+cn_threshold:  5
 # Maximal range, stating wether to radial velocities are consistent with each other, given in m*s^-1
 CNS_range:  3
 # Percentage threshold used to infer acceptable consensus averages, given in percent
@@ -64,9 +65,9 @@ CNS_percentage:  60
 # Threshold used for SNR filtering of data points, given in dB (Note: '0' implies that no threshold should be used.)
 SNR_threshold:  0
 # Minimal number of radial velocities that differ in their azimuth required for the retrieval
-N_vrad_threshold: 12
+N_vrad_threshold: 8
 # Minimal threshold for the coefficient of determination to accept retrieved mean winds
-R2_threshold:  0.5
+R2_threshold:  0.95
 ###########################################
 #################needed paths##############
 ###########################################
