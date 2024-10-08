@@ -30,12 +30,12 @@ system_wavelength : 1.552e-6
 # Number of points that make up a range gate in the time domain
 number_of_gate_points: -999
 # Number of bottom range gates to exclude in the L2-Product
-# blindezone_gates:     0
+blindezone_gates: 0
 
 ############################################################################################################################
 #optional argument stating whether the gated information contains overlapping range gates. (use 0 for False and 1 for True)#
 ############################################################################################################################
-# overlapping_gates: 0
+overlapping_gates: 0
 ############################################################################################################################
 # Number of laser shots used for avaraging (Note: please make sure this number is equal to the one specified in the scan modus)
 #pulses_per_direction: 30000
