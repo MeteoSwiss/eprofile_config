@@ -7,7 +7,7 @@ base_filename_in: MWR_1C01_0-50-250-1006-98518_A
 base_filename_out: MWR_tbd_0-50-250-1006-98518_A
 
 # the following keys are most possibly duplicates of the input file's attributes. If both exist, should be used to check
-wigos_station_id: 50-250-1006-98518
+wigos_station_id: 0-250-1006-598518
 instrument_id: A
 station_latitude: 50.61
 station_longitude: 3.14

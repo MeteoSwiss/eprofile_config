@@ -1,0 +1,32 @@
+base_filename_in: MWR_PRG_A
+base_filename_out: MWR_1C01_0-20000-0-11520_A
+filename_scheme: radiometrics
+input_directory: add full directory path here
+meas_constructor: from_radiometrics
+nc_attributes:
+  date_of_last_absolute_calibration: '2021-12-31 23:59:59'
+  date_of_last_covariance_matrix: '2021-12-31 23:59:59'
+  institution: CHMI
+  instrument_calibration_status: calibrated
+  instrument_generation: MP
+  instrument_history: to_be_specified
+  instrument_hw_id: 3353A
+  instrument_id: A
+  instrument_manufacturer: Radiometrics
+  instrument_model: MP-3000A
+  ir_instrument_fabrication_year: TBC
+  ir_instrument_manufacturer: TBC
+  ir_instrument_model: KT-15 Infrared Thermometer
+  met_instrument_fabrication_year: TBC
+  met_instrument_manufacturer: TBC
+  met_instrument_model: HC2-S3 Ambient Air Probe
+  principal_investigator: Upper-Air Dept
+  site_location: LIBUS,CZECH_REPUBLIC
+  type_of_automatic_calibrations: gain calibration with ambient temperature target
+    and noise diode
+  wigos_station_id: 0-20000-0-11520
+output_directory: add full directory path here
+reader: reader_radiometrics
+station_altitude: 302.04
+station_latitude: 50.00778
+station_longitude: 14.44694
