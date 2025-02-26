@@ -45,7 +45,7 @@ nc_attributes:
 #
 # the following attributes are potentially varying with time:
   instrument_calibration_status: calibrated
-  date_of_last_absolute_calibration: '2021-12-31 23:59:59'  # dates for global attrs need to be specified as str
+  date_of_last_absolute_calibration: '2025-02-21 10:00:00'  # dates for global attrs need to be specified as str
   date_of_last_covariance_matrix: '2021-12-31 23:59:59'  # dates for global attrs need to be specified as str
   type_of_automatic_calibrations: gain calibration with ambient temperature target and noise diode
 
