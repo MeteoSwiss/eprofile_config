@@ -2,7 +2,8 @@ WIGOS,identifier,profile_id,Site name,country,latitude,longitude,altitude,year
 0-20000-0-06610,PAYWL,A,Payerne,Switzerland,46.81369,6.942547,490,2024
 0-20000-0-06620,SHAWL,A,Schaffhausen,Switzerland,47.689844,8.620125,438,2021
 0-20000-0-06632,GREWL,A,Grenchen,Switzerland,47.1791,7.415025,428,2021
-0-00000-0-00000,KEVWL,A,Keflavik,Iceland,-22.14,64.01,5,2024
+0-20000-0-04018,KEFWL,A,Keflavik,Iceland,-22.60,63.98,52,2024
+0-20000-0-04130,REYWL,A,Reykavik,Iceland,-21.91,64.13,62,2024
 0-40-2-001IAO,IAOWL,A,Innsbruck,Austria,47.2642,11.38521,613,2024
 0-40-2-002KOL,KOLWL,A,Kolsass,Austria,47.30528,11.62222,545,2024
 0-276-4-14990,AACWL,A,Aachen,Germany,50.798645,6.0241,231,2021
