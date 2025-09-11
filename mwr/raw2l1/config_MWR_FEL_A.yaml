@@ -25,7 +25,7 @@ nc_attributes:
   site_location: FELTRE,ITALY
   type_of_automatic_calibrations: opaque atmosphere at low elevation and internal
     load
-  wigos_station_id: 0-20000-0-16999
+  wigos_station_id: 0-380-405-MWR001
 output_directory: add full directory path here
 reader: reader_attex
 station_altitude: 291.0
