@@ -1,0 +1,22 @@
+# Define the path to the E-Profile meta-data
+filename_alc_instruments: '/home/sae/Documents/MetaData/eprofile-alc-instruments.csv'
+filename_hub_sites: '/home/sae/Documents/MetaData/eprofile-sites.csv'
+
+# WP:
+filename_wrwp_instruments: '/home/sae/Documents/MetaData/eprofile-rwp-instruments.csv'
+
+outfolder: '/home/sae/Documents/Winds/'
+
+filename_mch_instrument_list: '/home/sae/Documents/MetaData/Instruments_list.xlsx'
+
+basefolder_wp: '/home/sae/Documents/Data/wind/'
+
+# EUCOS:
+outfolder_eucos: '/home/sae/Documents/MetaData/'
+
+# MWR:
+mwr_l1_prefix: 'MWR_1C01_'
+mwr_l2_prefix: 'MWR_2C01_'
+folder_mwr_l1: '/home/sae/Documents/MWR/Data/L1/'
+folder_mwr_l2: '/home/sae/Documents/MWR/Data/L2/'
+folder_structure: 'E-Profile'
