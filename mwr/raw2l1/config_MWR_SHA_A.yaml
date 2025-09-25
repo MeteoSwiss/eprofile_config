@@ -7,7 +7,23 @@ bandwidth:
 - 0.23
 - 0.23
 - 0.23
+- 0.23
+- 0.23
+- 0.23
+- 0.23
+- 0.6
+- 1.0
+- 2.0
+base_filename_in: MWR_SHA_A
+base_filename_out: MWR_1C01_0-20000-0-06620_A
 beamwidth:
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
 - .nan
 - .nan
 - .nan
@@ -23,7 +39,21 @@ channels_ok:
 - 1
 - 1
 - 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
 freq_shift:
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
 - 0.0
 - 0.0
 - 0.0
@@ -45,12 +75,12 @@ nc_attributes:
   date_of_last_covariance_matrix: '2021-12-31 23:59:59'
   institution: METEOSWISS
   instrument_calibration_status: calibrated
-  instrument_generation: TEMPRO
+  instrument_generation: HATPRO G1-5
   instrument_history: to_be_specified
-  instrument_hw_id: R-TPRO-07/003
+  instrument_hw_id: G5-0030235
   instrument_id: A
   instrument_manufacturer: RPG
-  instrument_model: TEMPRO
+  instrument_model: HATPRO
   ir_instrument_fabrication_year: TBC
   ir_instrument_manufacturer: TBC
   ir_instrument_model: TBC
@@ -64,6 +94,6 @@ nc_attributes:
   wigos_station_id: 0-20000-0-06620
 output_directory: add full directory path here
 reader: reader_rpg
-station_altitude: 438.0
+station_altitude: 437.0
 station_latitude: 47.689844
 station_longitude: 8.620125
