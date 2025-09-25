@@ -1,13 +1,13 @@
 hub_id,site_name,country,wigos_station_id,instrument_id,station_latitude,station_longitude,station_altitude,institution,instrument_manufacturer,instrument_model,instrument_generation,instrument_calibration_status,principal_investigator,meas_constructor,file
-LIN,LINDENBERG,GERMANY,0-20000-0-10393,C,52.21,14.12,123.0,DWD,RPG,HATPRO,HATPRO G1-5,calibrated,Remote Sensing Group,from_rpg,config_MWR_LIN_C.yaml
+LIN,LINDENBERG,GERMANY,0-276-4-14997,C,52.21,14.12,123.0,DWD,RPG,HATPRO,HATPRO G1-5,calibrated,Remote Sensing Group,from_rpg,config_MWR_LIN_C.yaml
 LIS,LISA_P7,FRANCE,0-250-1001-75113006,A,48.8277,2.3806,55.0,ISPL,RPG,HATPRO,HATPRO G1-5,calibrated,Remote_Sensing_Group,from_rpg,config_MWR_LIS_A.yaml
-LIN,LINDENBERG,GERMANY,0-20000-0-10393,A,52.21,14.12,123.0,DWD,Radiometrics,MP-3000A,MP,calibrated,Remote Sensing Group,from_radiometrics,config_MWR_LIN_A.yaml
+LIN,LINDENBERG,GERMANY,0-276-4-14995,A,52.21,14.12,123.0,DWD,Radiometrics,MP-3000A,MP,calibrated,Remote Sensing Group,from_radiometrics,config_MWR_LIN_A.yaml
 PRG,LIBUS,CZECH_REPUBLIC,0-20000-0-11520,A,50.00778,14.44694,302.04,CHMI,Radiometrics,MP-3000A,MP,calibrated,Upper-Air Dept,from_radiometrics,config_MWR_PRG_A.yaml
-SHA,SCHAFFHAUSEN,SWITZERLAND,0-20000-0-06620,A,47.689844,8.620125,438.0,METEOSWISS,RPG,TEMPRO,TEMPRO,calibrated,Remote Sensing Group,from_rpg,config_MWR_SHA_A.yaml
+SHA,SCHAFFHAUSEN,SWITZERLAND,0-20000-0-06620,A,47.689844,8.620125,437.0,METEOSWISS,RPG,HATPRO,HATPRO G1-5,calibrated,Remote Sensing Group,from_rpg,config_MWR_SHA_A.yaml
 TUB,BERLIN_CHARLOTTENBURG,GERMANY,0-276-0-10386,A,52.512283,13.327855,80.0,BERLIN_UNIVERSITY,RPG,HATPRO,HATPRO G1-5,calibrated,Remote Sensing Group,from_rpg,config_MWR_TUB_A.yaml
 RSY,ROISSY,FRANCE,0-20000-0-07157,A,49.015167,2.534333,108.0,MeteoFrance,RPG,HATPRO,HATPRO G1-5,calibrated,DSO/DOA/IED,from_rpg,config_MWR_RSY_A.yaml
-ROI,UNIVERSITY_DE_LILLE,FRANCE,50-250-1006-98518,A,50.610886,3.139739,15.0,LILLE_UNIVERSITY,RPG,HATPRO,HATPRO G1-5,calibrated,Remote Sensing Group,from_rpg,config_MWR_ROI_A.yaml
-AAO,AACHEN,GERMANY,0-20000-0-10505,A,50.8,6.03,231.0,DWD,RPG,HATPRO,HATPRO G1-5,calibrated,Remote Sensing Group,from_rpg,config_MWR_AAO_A.yaml
+ROI,UNIVERSITY_DE_LILLE,FRANCE,0-250-1006-598518,A,50.610886,3.139739,15.0,LILLE_UNIVERSITY,RPG,HATPRO,HATPRO G1-5,calibrated,Remote Sensing Group,from_rpg,config_MWR_ROI_A.yaml
+AAO,AACHEN,GERMANY,0-276-4-14998,A,50.8,6.03,231.0,DWD,RPG,HATPRO,HATPRO G1-5,calibrated,Remote Sensing Group,from_rpg,config_MWR_AAO_A.yaml
 IZO,Izana, Spain,0-20008-0-IZO,A,28.31,-16.5,2400,AEMET,Radiometer Physics (RPG),LHATPRO,LHATPRO,calibrated,Remote Sensing Group,from_rpg,config_MWR_IZO_A.yaml
 JUE,JULICH,GERMANY,0-276-0-10508,A,50.908547,6.413536,111.0,Cologne University,RPG,HATPRO,HATPRO G1-5,calibrated,Geophysics Meteorology Dept,from_rpg,config_MWR_JUE_A.yaml
 INO,Magurele, Romania,0-20008-0-INO,A,44.34,26.01,70,INOE2000,Radiometer Physics (RPG),HATPRO,G2,calibrated,Remote Sensing Group,from_rpg,config_MWR_INO_A.yaml
@@ -15,5 +15,5 @@ KRU,Krummendeich,GERMANY,0-276-13-20039,A,53.81853,9.237922,2.0,DLR,RPG,HATPRO,H
 TRE,TREVISO,ITALY,0-380-405-MWR002,A,45.670838377,12.2140345557,29.0,ARPA,Radiometrics,MP-3000A,MP,calibrated,Upper-Air Dept,from_radiometrics,config_MWR_TRE_A.yaml
 PAL,PALAISEAU_UHF_SIRTA,FRANCE,0-20000-0-07151,A,48.713,2.207,161.0,ISPL,RPG,HATPRO,HATPRO G1-5,calibrated,Remote_Sensing_Group,from_rpg,config_MWR_PAL_A.yaml
 PAY,PAYERNE,SWITZERLAND,0-20000-0-06610,A,46.81369,6.942547,490.0,METEOSWISS,RPG,HATPRO,HATPRO G1-5,calibrated,Remote Sensing Group,from_rpg,config_MWR_PAY_A.yaml
-GRE,GRENCHEN,SWITZERLAND,0-20000-0-06632,A,47.18,7.42,187.0,METEOSWISS,RPG,HATPRO,HATPRO G1-5,calibrated,Remote Sensing Group,from_rpg,config_MWR_GRE_A.yaml
+GRE,GRENCHEN,SWITZERLAND,0-20000-0-06632,A,47.18,7.42,428.0,METEOSWISS,RPG,HATPRO,HATPRO G1-5,calibrated,Remote Sensing Group,from_rpg,config_MWR_GRE_A.yaml
 FEL,FELTRE,ITALY,0-380-405-MWR001,A,46.02434,11.9064,291.0,ARPA VENETO,ATTEX,MTP-5HE,MTP-5,calibrated,Remote Sensing Group,from_attex,config_MWR_FEL_A.yaml
