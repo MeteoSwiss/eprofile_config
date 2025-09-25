@@ -88,7 +88,7 @@ nc_attributes:
   site_location: UNIVERSITY_DE_LILLE,FRANCE
   type_of_automatic_calibrations: calibration with ambient temperature target and
     noise diode
-  wigos_station_id: 50-250-1006-98518
+  wigos_station_id: 0-250-1006-598518
 output_directory: add full directory path here
 reader: reader_rpg
 station_altitude: 15.0

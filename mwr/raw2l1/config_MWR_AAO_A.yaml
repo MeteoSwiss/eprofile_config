@@ -14,7 +14,7 @@ bandwidth:
 - 1.0
 - 2.0
 base_filename_in: MWR_AAO_A
-base_filename_out: MWR_1C01_0-20000-0-10505_A
+base_filename_out: MWR_1C01_0-276-4-14998_A
 beamwidth:
 - .nan
 - .nan
@@ -88,7 +88,7 @@ nc_attributes:
   site_location: AACHEN,GERMANY
   type_of_automatic_calibrations: calibration with ambient temperature target and
     noise diode
-  wigos_station_id: 0-20000-0-10505
+  wigos_station_id: 0-276-4-14998
 output_directory: add full directory path here
 reader: reader_rpg
 station_altitude: 231.0

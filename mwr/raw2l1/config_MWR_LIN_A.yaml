@@ -1,8 +1,11 @@
 base_filename_in: MWR_LIN_A
-base_filename_out: MWR_1C01_0-20000-0-10393_A
+base_filename_out: MWR_1C01_0-276-4-14995_A
 filename_scheme: radiometrics
 input_directory: add full directory path here
 meas_constructor: from_radiometrics
+ir_bandwidth: .nan
+ir_beamwidth: .nan
+ir_wavelength: 10.5
 nc_attributes:
   date_of_last_absolute_calibration: '2021-12-31 23:59:59'
   date_of_last_covariance_matrix: '2021-12-31 23:59:59'
@@ -24,7 +27,7 @@ nc_attributes:
   site_location: LINDENBERG,GERMANY
   type_of_automatic_calibrations: gain calibration with ambient temperature target
     and noise diode
-  wigos_station_id: 0-20000-0-10393
+  wigos_station_id: 0-276-4-14995
 output_directory: add full directory path here
 reader: reader_radiometrics
 station_altitude: 123.0

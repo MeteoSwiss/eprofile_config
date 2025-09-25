@@ -14,7 +14,7 @@ bandwidth:
 - 1.0
 - 2.0
 base_filename_in: MWR_PAL_A
-base_filename_out: MWR_1C01_0-20000-0-07151_A
+base_filename_out: MWR_1C01_0-250-1001-07151_A
 beamwidth:
 - .nan
 - .nan

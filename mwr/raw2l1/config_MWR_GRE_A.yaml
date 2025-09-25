@@ -67,6 +67,9 @@ ir_beamwidth: .nan
 ir_wavelength: .nan
 meas_constructor: from_rpg
 n_sidebands: 1
+lwcl_check:
+  do_check: True
+  multiplying_factor: 0.075
 nc_attributes:
   date_of_last_absolute_calibration: '2021-12-31 23:59:59'
   date_of_last_covariance_matrix: '2021-12-31 23:59:59'
@@ -91,6 +94,6 @@ nc_attributes:
   wigos_station_id: 0-20000-0-06632
 output_directory: add full directory path here
 reader: reader_rpg
-station_altitude: 187.0
+station_altitude: 428.0
 station_latitude: 47.18
 station_longitude: 7.42
