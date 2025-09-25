@@ -16,3 +16,5 @@ WIGOS,identifier,profile_id,Site name,country,latitude,longitude,altitude,year
 0-20008-0-CES,CABWL,A,Cabauw,Netherland,51.96834,4.92920,-0.7,2020
 0-40-2-003RAD,RADWL,A,Radfeld,Austria,47.458688,11.932414,510,2024
 0-20000-0-06670,KLOWL,A,Kloten,Switzerland,47.479535,8.535927,426,2021
+0-276-13-20038,KRUWL,A,Krummendeich,Germany,53.818572,9.237933,5,2025
+0-20000-0-14370,SLAWL,A,Slavonski_Brod,Croatia,45.1591666667,17.9952777778,88,2025
