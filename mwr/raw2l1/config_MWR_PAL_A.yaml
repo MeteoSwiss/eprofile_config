@@ -88,7 +88,7 @@ nc_attributes:
   site_location: PALAISEAU_UHF_SIRTA,FRANCE
   type_of_automatic_calibrations: calibration with ambient temperature target and
     noise diode
-  wigos_station_id: 0-20000-0-07151
+  wigos_station_id: 0-250-1001-07151
 output_directory: add full directory path here
 reader: reader_rpg
 station_altitude: 161.0
