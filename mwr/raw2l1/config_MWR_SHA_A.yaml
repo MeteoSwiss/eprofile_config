@@ -89,11 +89,11 @@ nc_attributes:
   met_instrument_model: TBC
   principal_investigator: Remote Sensing Group
   site_location: SCHAFFHAUSEN,SWITZERLAND
-  type_of_automatic_calibrations: calibration with ambient temperature target and
+  type_of_automatic_calibrations: gain calibration with ambient temperature target and
     noise diode
   wigos_station_id: 0-20000-0-06620
 output_directory: add full directory path here
 reader: reader_rpg
-station_altitude: 437.0
+station_altitude: 438.0
 station_latitude: 47.689844
 station_longitude: 8.620125
