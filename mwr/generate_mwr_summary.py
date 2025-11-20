@@ -25,7 +25,9 @@ CSV_COLUMNS = [
     "instrument_calibration_status",
     "principal_investigator",
     "meas_constructor",
-    "file"
+    "file",
+    "gts_l1",
+    "gts_l2"
 ]
 
 def extract_fields(yaml_data, filename):
@@ -68,7 +70,25 @@ def main():
                     rows.append(row)
                 except Exception as e:
                     print(f"Error reading {fname}: {e}")
+    # Map GTS levels to their corresponding columns
+    # read MWR_GTS_header.csv to find the mapping
+    gts_mapping_file = "mwr/MWR_GTS_header.csv"
+    gts_mapping = {}
+    with open(gts_mapping_file, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for mapping_row in reader:
+            institution = mapping_row.get("institution", "")
+            gts_l1 = mapping_row.get("GTS_L1", "")
+            gts_l2 = mapping_row.get("GTS_L2", "")
+            gts_mapping[institution] = (gts_l1, gts_l2)
 
+    for row in rows:
+        institution = row.get("institution", "")
+
+        gts_l1, gts_l2 = gts_mapping.get(institution, ("", ""))
+        row["gts_l1"] = gts_l1
+        row["gts_l2"] = gts_l2
+    
     # Write to CSV
     with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=CSV_COLUMNS)
