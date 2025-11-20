@@ -20,3 +20,5 @@ mwr_l2_prefix: 'MWR_2C01_'
 folder_mwr_l1: '/home/sae/Documents/MWR/Data/L1/'
 folder_mwr_l2: '/home/sae/Documents/MWR/Data/L2/'
 folder_structure: 'E-Profile'
+
+filename_mwr_instruments: '/home/sae/eprofile_config/mwr/mwr_raw2l1_summary.csv'

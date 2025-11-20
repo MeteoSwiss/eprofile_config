@@ -70,7 +70,7 @@ n_sidebands: 1
 nc_attributes:
   date_of_last_absolute_calibration: '2021-12-31 23:59:59'
   date_of_last_covariance_matrix: '2021-12-31 23:59:59'
-  institution: ISPL
+  institution: SIRTA
   instrument_calibration_status: calibrated
   instrument_generation: HATPRO G1-5
   instrument_history: to_be_specified
