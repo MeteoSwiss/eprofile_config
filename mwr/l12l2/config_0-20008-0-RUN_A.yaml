@@ -36,5 +36,5 @@ retrieval:
   zenith_channels: [True, True, True, True, True, True, True,
                     True, True, True, True, True, True, True]
   scan_channels: [False, False, False, False, False, False, False,
-                 False, False, False, False, False, False, False] # must exactly match values in freq_used
-  scan_ele: []  # TODO: implement a 2-sided ele-search for getting ele around 5, 10, and 20 deg for all instruments (rather configure in retrieval_config)
+                 False, False, False, False, True, True, True] # must exactly match values in freq_used
+  scan_ele: [30, 19.2, 14.4, 11.4, 8.4, 5.4, 4.2] # TODO: implement a 2-sided ele-search for getting ele around 5, 10, and 20 deg for all instruments (rather configure in retrieval_config)
