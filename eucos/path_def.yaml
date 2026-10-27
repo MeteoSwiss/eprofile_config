@@ -1,24 +1,29 @@
 # Define the path to the E-Profile meta-data
-filename_alc_instruments: '/home/sae/Documents/MetaData/eprofile-alc-instruments.csv'
-filename_hub_sites: '/home/sae/Documents/MetaData/eprofile-sites.csv'
+filename_alc_instruments: '/proj/pay/E-PROFILE/HubDB/eprofile-alc-instruments.csv'
+filename_hub_sites: '/proj/pay/E-PROFILE/HubDB/eprofile-sites.csv'
 
 # WP:
-filename_wrwp_instruments: '/home/sae/Documents/MetaData/eprofile-rwp-instruments.csv'
+filename_wrwp_instruments: '/proj/pay/E-PROFILE/HubDB/eprofile-rwp-instruments.csv'
 
-outfolder: '/home/sae/Documents/Winds/'
+filename_mch_instrument_list: '/proj/pay/E-PROFILE/Instruments_list.xlsx'
 
-filename_mch_instrument_list: '/home/sae/Documents/MetaData/Instruments_list.xlsx'
-
-basefolder_wp: '/home/sae/Documents/Data/wind/'
+outfolder: '/proj/pay/E-PROFILE/MONITORING/Wind/Quicklooks/'
+basefolder_wp: '/product_data/data/pay/REM/ACQ/E_PROFILE_WP/'
 
 # EUCOS:
-outfolder_eucos: '/home/sae/Documents/MetaData/'
+outfolder_eucos: '/proj/pay/E-PROFILE/REPORTING/Monthly/EUCOS/QMP/'
+
+# Master instrument lists (WP_list/WR_list/WL_list) built from Instruments_list.xlsx:
+outfolder_lists: '/proj/pay/E-PROFILE/REPORTING/Monthly/EUCOS/Lists/'
+
+# Instrument list outfolder:
+outfolder_instrument_list: '/proj/pay/E-PROFILE/Operational/Instrument_list/'
 
 # MWR:
 mwr_l1_prefix: 'MWR_1C01_'
 mwr_l2_prefix: 'MWR_2C01_'
-folder_mwr_l1: '/home/sae/Documents/MWR/Data/L1/'
-folder_mwr_l2: '/home/sae/Documents/MWR/Data/L2/'
+folder_mwr_l1: '/product_data/data/pay/REM/ACQ/E_PROFILE_MWR/level1/'
+folder_mwr_l2: '/product_data/data/pay/REM/ACQ/E_PROFILE_MWR/level2/'
 folder_structure: 'E-Profile'
 
-filename_mwr_instruments: '/home/sae/eprofile_config/mwr/mwr_raw2l1_summary.csv'
+filename_mwr_instruments: '/proj/pay/E-PROFILE/eprofile_config/mwr/mwr_raw2l1_summary.csv'
