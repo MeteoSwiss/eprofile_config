@@ -14,7 +14,7 @@ bandwidth:
 - 1.0
 - 2.0
 base_filename_in: MWR_RSY_A
-base_filename_out: MWR_1C01_0-20000-0-07157_A
+base_filename_out: MWR_1C01_0-20000-0-07645_A
 beamwidth:
 - .nan
 - .nan
@@ -73,24 +73,24 @@ nc_attributes:
   institution: MeteoFrance
   instrument_calibration_status: calibrated
   instrument_generation: HATPRO G1-5
-  instrument_history: to_be_specified
-  instrument_hw_id: ''
+  instrument_history: previously installed at Roissy
+  instrument_hw_id: SN0030207
   instrument_id: A
   instrument_manufacturer: RPG
   instrument_model: HATPRO
-  ir_instrument_fabrication_year: TBC
+  ir_instrument_fabrication_year: ''
   ir_instrument_manufacturer: ''
   ir_instrument_model: ''
   met_instrument_fabrication_year: ''
   met_instrument_manufacturer: ''
   met_instrument_model: ''
   principal_investigator: DSO/DOA/IED
-  site_location: ROISSY,FRANCE
+  site_location: NIMES_COURBESSAC,FRANCE
   type_of_automatic_calibrations: calibration with ambient temperature target and
     noise diode
-  wigos_station_id: 0-20000-0-07157
+  wigos_station_id: 0-20000-0-07645
 output_directory: add full directory path here
 reader: reader_rpg
-station_altitude: 108.0
-station_latitude: 49.015167
-station_longitude: 2.534333
+station_altitude: 60.0
+station_latitude: 43.8569444444
+station_longitude: 4.4063888889
